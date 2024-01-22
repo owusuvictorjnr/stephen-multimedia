@@ -1,11 +1,11 @@
 'use client'
 
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import Footer from '../../components/Footer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect, useState } from 'react'
-import Hero from '@/components/Hero/Hero'
+import LocalizationProviderWrapper from '../../components/LocalizationProvider'
+import Navbar from '../../components/Navbar'
 
 // export const metadata = {
 //   title: 'Create Next App',
@@ -46,10 +46,12 @@ export default function RootLayout({ children }) {
 
   return (
     <div className="">
-      <Navbar theme={theme} setTheme={handleThemeToggle} />
-      {/* <Hero theme={theme} /> */}
-      <main className="">{children}</main>
-      <Footer />
+      <LocalizationProviderWrapper>
+        <Navbar theme={theme} setTheme={handleThemeToggle} />
+        {/* <Hero theme={theme} /> */}
+        <main className="">{children}</main>
+        <Footer />
+      </LocalizationProviderWrapper>
     </div>
   )
 }
