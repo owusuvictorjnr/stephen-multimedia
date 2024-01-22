@@ -1,6 +1,6 @@
 'use client'
 
-import Hero from '@/components/Hero/Hero'
+import Hero from '../../components/Hero/Hero'
 import Image from 'next/image'
 
 const ImageListData = {
@@ -148,9 +148,8 @@ export default function Home() {
         </div>
 
         <div className="capitalize text-sm mt-5 bg-base-300 shadow-md px-2 py-1 font-bold md:text-2xl">
-          testimonies 
+          testimonies
         </div>
-
       </div>
     </main>
   )
