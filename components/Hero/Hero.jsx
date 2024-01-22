@@ -1,8 +1,8 @@
 'use client'
-import data from '@/utils/data'
-import Image from 'next/image'
+// import data from '@/utils/data'
+// import Image from 'next/image'
+// import { Carousel } from 'react-responsive-carousel'
 import React from 'react'
-import { Carousel } from 'react-responsive-carousel'
 
 const Hero = ({ theme }) => {
   return (
@@ -11,7 +11,7 @@ const Hero = ({ theme }) => {
       <div className="flex items-center">
         <video
           // src={`${theme === 'dartk' ? '/vid/video.mp4' : '/images/pic1.jpg'}`}
-          src='/vid/video.mp4'
+          src="/vid/video.mp4"
           autoPlay
           loop
           muted
