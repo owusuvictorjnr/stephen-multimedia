@@ -16,4 +16,7 @@ model User {
 
    selectedDate String
    selectedTime String
+   name String
+   email String
+   comment String
 }
