@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 import { IoIosMenu } from 'react-icons/io'
+import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa'
 
 const Navbar = ({ theme, setTheme }) => {
   return (
     <>
-      <nav className="shadow-md bg-white z-10 w-full dark:bg-dark px-4 flex justify-between mt-3 mb-5">
+      <nav className="shadow-md bg-white z-10 w-full sm:fixed sm:top-0 dark:bg-dark px-4 flex justify-between mt-3 mb-5">
         <div className="flex items-center">
           {/* TODO: Logo */}
           <Link href="/">
@@ -97,7 +98,9 @@ const Navbar = ({ theme, setTheme }) => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 w-80 min-h-full  bg-base-200 text-base-content">
+
+              <div className=""></div>
+              <ul className="menu p-4 w-80 min-h-full capitalize bg-base-200 text-base-content gap-5 pt-10 space-y-5 text-center">
                 {/* Sidebar content here */}
                 <Link href="/">
                   <li className="">home</li>
@@ -118,6 +121,33 @@ const Navbar = ({ theme, setTheme }) => {
                 <Link href="/booking">
                   <li className="">booking</li>
                 </Link>
+
+                <div className="divider" />
+
+                <div className="">
+                  <div className="mt-[20rem]">
+                    <h1 className=" uppercase font-bold bg-base-content text-white py-2 px-2 rounded">
+                      let`s connect
+                    </h1>
+                  </div>
+                  <div className="mt-5 flex justify-center gap-10">
+                    <Link href="" className="hover:tooltip" data-tip="Facebook">
+                      <FaFacebook size={30} />
+                    </Link>
+
+                    <Link
+                      href=""
+                      className="hover:tooltip"
+                      data-tip="Instagram"
+                    >
+                      <FaInstagram size={30} />
+                    </Link>
+
+                    <Link href="" className="hover:tooltip" data-tip="Tiktok">
+                      <FaTiktok size={30} />
+                    </Link>
+                  </div>
+                </div>
               </ul>
             </div>
           </div>
