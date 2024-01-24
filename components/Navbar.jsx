@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { IoIosMenu } from 'react-icons/io'
 
 const Navbar = ({ theme, setTheme }) => {
   return (
@@ -23,12 +24,12 @@ const Navbar = ({ theme, setTheme }) => {
               <li className="">about</li>
             </Link>
 
-            <Link href="/contact">
+            {/* <Link href="/contact">
               <li className="">contact</li>
-            </Link>
+            </Link> */}
 
             <Link href="/gallary">
-              <li className="">gallary</li>
+              <li className="">gallery</li>
             </Link>
 
             <Link href="/booking">
@@ -78,6 +79,48 @@ const Navbar = ({ theme, setTheme }) => {
               </svg>
             )}
           </label>
+        </div>
+
+        {/* sidebar */}
+        <div className="md:hidden z-10">
+          <div className="drawer">
+            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              {/* Page content here */}
+              <label htmlFor="my-drawer" className=" drawer-button">
+                <IoIosMenu size={30} />
+              </label>
+            </div>
+            <div className="drawer-side">
+              <label
+                htmlFor="my-drawer"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu p-4 w-80 min-h-full  bg-base-200 text-base-content">
+                {/* Sidebar content here */}
+                <Link href="/">
+                  <li className="">home</li>
+                </Link>
+
+                <Link href="/about">
+                  <li className="">about</li>
+                </Link>
+
+                {/* <Link href="/contact">
+              <li className="">contact</li>
+            </Link> */}
+
+                <Link href="/gallary">
+                  <li className="">gallery</li>
+                </Link>
+
+                <Link href="/booking">
+                  <li className="">booking</li>
+                </Link>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </>
