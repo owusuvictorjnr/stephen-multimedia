@@ -88,7 +88,7 @@ export default function Home() {
         <div className="capitalize text-sm mt-5 bg-base-300 shadow-md px-2 py-1 font-bold md:text-2xl">
           featured photos
         </div>
-        <div className="mb-10">
+        <div className="mb-10 bg-base-300 min-h-[30rem] pb-10">
           <div className="grid grid-cols-2 md:grid-cols-2 gap-10 lg:gap-10 mt-5 px-5 mb-4">
             {ImageListData.images.map((imgs) => (
               <div className="" key={imgs}>
@@ -148,7 +148,23 @@ export default function Home() {
         </div>
 
         <div className="capitalize text-sm mt-5 bg-base-300 shadow-md px-2 py-1 font-bold md:text-2xl">
-          testimonies
+          services
+        </div>
+        <div className="px-5 bg-base-200 pb-10 mt-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error
+          eaque numquam esse sapiente nemo pariatur animi sequi voluptatibus
+          quas, obcaecati natus magnam ab. Eos ullam error eligendi atque
+          dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Nulla error eaque numquam esse sapiente nemo pariatur animi sequi
+          voluptatibus quas, obcaecati natus magnam ab. Eos ullam error eligendi
+          atque dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Nulla error eaque numquam esse sapiente nemo pariatur animi
+          sequi voluptatibus quas, obcaecati natus magnam ab. Eos ullam error
+          eligendi atque dignissimos.
+        </div>
+
+        <div className="capitalize text-sm mt-5 bg-base-300 shadow-md px-2 py-1 font-bold md:text-2xl">
+          testimonials
         </div>
       </div>
     </main>
